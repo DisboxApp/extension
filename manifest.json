@@ -1,0 +1,16 @@
+{
+    "name": "DisboxDownloader",
+    "description": "Used to download files for Disbox.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "*://*.discordapp.com/*",
+        "*://*.discord.com/*"
+    ],
+    "externally_connectable": {
+        "matches": ["*://localhost/*", "*://disboxapp.github.io/*"]
+    }
+}
